@@ -19,6 +19,9 @@ public class MemberRepository {
         return instance;
     }
 
+    /**
+     * 싱글톤 패턴은 객체를 단 하나만 생성해서 공유해야 하므로 생성자를 private 접근자로 막아둔다.
+     */
     private MemberRepository() { }
 
     public Member save(Member member) {
