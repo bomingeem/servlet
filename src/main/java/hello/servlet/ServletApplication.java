@@ -15,8 +15,16 @@ public class ServletApplication {
 	/**
 		 @Bean
 		 InternalResourceViewResolver internalResourceViewResolver() {
-		 return new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
-
+		 	return new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
 		 }
 	 */
+
+	/**
+	 @RequestMapping
+	 @Bean
+	 SpringMemberFormControllerV1 springMemberFormControllerV1() {
+	 	return new SpringMemberFormControllerV1();
+	 }
+	 */
+
 }
